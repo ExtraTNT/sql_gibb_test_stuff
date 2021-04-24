@@ -1,39 +1,49 @@
-\documentclass[a4paper,8pt]{article} %a4, 10pt, article
-\usepackage{geometry}
-\geometry {
+\documentclass[a4paper,8pt]{article} % a4, 8pt, article
+\usepackage{geometry} % papersize
+\geometry { % paper type + spacing
 	a4paper,
 	top=2cm,
 	bottom=2.5cm,
 	left=2cm,
 	right=2cm
 }
-\usepackage{fancyhdr}
-\usepackage[english]{babel} %language
-\usepackage[utf8]{inputenc} %lovely utf-8
-\usepackage{graphicx} %images
-\usepackage{wrapfig} %images
-\usepackage{array} %allways use this shit, idk why
-\usepackage{tikz} %draw stuff
-\usepackage{ifthen} %draw stuff
-\usetikzlibrary{shapes,calc,fadings} %draw stuff
-\usepackage{xspace} %usefull idk, allways import this stuff
-\usepackage{dirtytalk} %\say because fuck it
-\usepackage{setspace} %don't ask, kind of like it...
-\usepackage{pgfplots}
-\usepackage{lastpage}
+\usepackage{fancyhdr} % headers
+\usepackage[german]{babel} % language
+\usepackage[utf8]{inputenc} % lovely utf-8
+\usepackage{graphicx} % images
+\usepackage{wrapfig} % images
+\usepackage{array} % allways use this shit, idk why
+\usepackage{tikz} % draw stuff
+\usepackage{ifthen} % draw stuff
+\usetikzlibrary{shapes,calc,fadings} % draw stuff
+\usepackage{xspace} % usefull idk, allways import this stuff
+\usepackage{dirtytalk} % \say because fuck it
+\usepackage{setspace} % don't ask, kind of like it...
+\usepackage{pgfplots} % graphs
+\usepackage{lastpage} % for the pagenumber
+\usepackage{titlesec} % to change title size
 
-\singlespacing
-\def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)}
+%smaller sections, subsections, subsubsections, paragraphs and subparagraphs
+\titleformat*{\section}{\normalsize\bfseries}
+\titleformat*{\subsection}{\small\bfseries}
+\titleformat*{\subsubsection}{\small\bfseries}
+\titleformat*{\paragraph}{\small\bfseries}
+\titleformat*{\subparagraph}{\small\bfseries}
 
-\pagestyle{fancy}
-\fancyhf{}
-\rhead{Gibb M153}
-\lhead{Test 1, AB 1 - 4}
-\chead{inf-2018i}
-\cfoot{\thepage/\pageref{LastPage}}
+\singlespacing % reduce spaceing
+
+\def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)} % gpl for the win
+
+% header and footer with fancy
+\pagestyle{fancy} % set pagestyle
+\fancyhf{} % just do it -> fancy think it's fancy to do so...
+\rhead{Gibb M153} % right header
+\lhead{Test 1, AB 1 - 4} % left header
+\chead{inf-2018i} % center header
+\cfoot{\thepage/\pageref{LastPage}} % center footer -> pagenmbr
 
 
-%highlighting with some random effect -> looks handmade and i love it...
+% highlighting with some random effect -> looks handmade and i love it...
 \newcommand\hl[2][yellow]{
 	\begin{tikzpicture}[
 	baseline,
@@ -44,12 +54,67 @@
 	\end{tikzpicture}
 }
 
-\makeatother
+\makeatother % don't touch
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %											Begin with the fucking document														%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-\section{test}
-\pagebreak
-\section{test1}
+	\begin{small}
+	\section{SQL}
+		\begin{tabular}{m{1.75cm}|p{14.5cm}}
+			Command 		& Description\\\hline\hline
+			USE				& wechselt den Ausführungskontext auf eine bestimmte Datenbank. \hl{USE master}, in diesem Fall wird zur \hl[green]{Metadaten DB} gewechselt.\\\hline
+			SELECT			& \hl[pink]{SELECT [Collumn name] FROM [Table name]}\\\hline
+			UPDATE			& \hl[pink]{UPDATE [Table name] SET [collumn name] = [value], ... WHERE [condition]}\\\hline
+			DELETE			& \hl[pink]{DELETE FROM [Table name] WHERE [condition]}\\\hline
+			INSERT INTO		& \hl[pink]{INSERT INTO [Table name] ([column1, column2,...]) VALUES ([value1, value2,...])}\\\hline
+			GO				& wird verwendet, um die Ausführung zu erzwingen.\\\hline
+			CREATE DATABASE	& kreiert eine neue Datenbank, zu welcher man mit \hl{USE} wechseln kann\\\hline
+			DROP DATABASE	& schmeisst die Datenbank aus dem Fenster\\\hline
+			ON				& gibt an, wo die Daten physisch gespeichert werden. \hl[red]{TODO}\\\hline
+			CREATE TABLE	& um eine Tabele zu kreieren, \hl[pink]{CREATE TABLE [table name] ([Coll1, coll2 etc])}\\\hline
+			DROP TABLE		& schmeisst die Table aus dem Fenster\\\hline
+			ALTER TABLE		& \hl[pink]{ALTER TABLE [Table name] [DROP / ALTER] COLUMN [column name] [datatype (only if ALTER)]}\\\hline
+			CREATE INDEX	& 
+			
+		\end{tabular}
+		\begin{minipage}{0.5\linewidth}
+			\section{Data Type}
+			\begin{tabular}{c|c}
+				Data type	& use\\\hline
+				bigint		& 64 bit number\\\hline
+				int			& 32 bit number\\\hline
+				smallint	& 16 bit number\\\hline
+				tinyint		& 8 bit number\\\hline
+				bit			& 1 bit number\\\hline
+				decimal(precision, scale) & floating point number\\\hline
+				numeric		& same as decimal\\\hline
+				money		& 64 bit int shifted\\\hline
+				smallmoney	& 32 bit int shifted\\\hline
+				float(n)	& float 1 - 24\\\hline
+				real		& float(24)\\\hline
+				datetime	& date and time 3ms\\\hline
+				smalldatetime	& date and time 1min\\\hline
+				char		& char max 8000\\\hline
+				varchar(n)	& use this instead of char\\\hline
+				nchar		& char in unicode\\\hline
+				nvarchar(n)	& varchar in unicode\\\hline
+				text		& long texts\\\hline
+				ntext		& unicode text\\\hline
+				binary		& malware\\\hline
+				varbinary(n)	& use this instead of binary\\\hline
+				image		& binary, but longer\\\hline
+				cursor		& reference as cursor\\\hline
+				sql\_variant	& never use this\\\hline
+				table		& query result for later usage\\\hline
+				timestamp	& timestamp\\\hline
+				uniqueidentifier & GUID\\\hline
+			\end{tabular}
+		\end{minipage}
+		\begin{minipage}{0.5\linewidth}
+			\section{Indexes}
+			 
+		\end{minipage}
+	\section{Trees}
+	 \end{small}
 \end{document}

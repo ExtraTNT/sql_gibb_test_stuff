@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  24 APR 2021 15:51
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  24 APR 2021 19:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -68,8 +68,13 @@ Package: babel 2020/02/14 3.40 The Babel package
 (/usr/share/texlive/texmf-dist/tex/generic/babel/switch.def
 File: switch.def 2020/02/14 3.40 Babel switching mechanism
 )
-(/usr/share/texlive/texmf-dist/tex/generic/babel-english/english.ldf
-Language: english 2017/06/06 v3.3r English support from the babel system
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/german.ldf
+Language: german 2018/12/08 v2.11 German support for babel (pre-1996 orthograph
+y)
+
+(/usr/share/texlive/texmf-dist/tex/generic/babel-german/germanb.ldf
+Language: germanb 2018/12/08 v2.11 German support for babel (pre-1996 orthograp
+hy)
 
 (/usr/share/texlive/texmf-dist/tex/generic/babel/babel.def
 File: babel.def 2020/02/14 3.40 Babel common definitions
@@ -80,13 +85,8 @@ File: babel.def 2020/02/14 3.40 Babel common definitions
 \bbl@readstream=\read2
 \bbl@dirlevel=\count179
 )
-Package babel Info: \l@canadian = using hyphenrules for english
-(babel)             (\language0) on input line 102.
-Package babel Info: \l@australian = using hyphenrules for ukenglish
-(babel)             (\language35) on input line 105.
-Package babel Info: \l@newzealand = using hyphenrules for ukenglish
-(babel)             (\language35) on input line 108.
-))
+Package babel Info: Making " an active character on input line 135.
+)))
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2018/08/11 v1.3c Input encoding file
 \inpenc@prehook=\toks16
@@ -631,10 +631,22 @@ File: pgflibraryplotmarks.code.tex 2020/01/08 v3.1.5b (3.1.5b)
 ))) (/usr/share/texlive/texmf-dist/tex/latex/lastpage/lastpage.sty
 Package: lastpage 2015/03/29 v1.2m Refers to last page's name (HMM; JPG)
 )
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2019/10/16 v2.13 Sectioning titles
+\ttl@box=\box80
+\beforetitleunit=\skip60
+\aftertitleunit=\skip61
+\ttl@plus=\dimen270
+\ttl@minus=\dimen271
+\ttl@toksa=\toks36
+\titlewidth=\dimen272
+\titlewidthlast=\dimen273
+\titlewidthfirst=\dimen274
+)
 (/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdfmode.def
 File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count276
-\l__pdf_internal_box=\box80
+\l__pdf_internal_box=\box81
 )
 
 LaTeX Warning: Unused global option(s):
@@ -643,20 +655,20 @@ LaTeX Warning: Unused global option(s):
 (./spickTest1.aux)
 \openout1 = `spickTest1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 51.
-LaTeX Font Info:    ... okay on input line 51.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
+LaTeX Font Info:    ... okay on input line 61.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -695,16 +707,16 @@ LaTeX Font Info:    ... okay on input line 51.
 (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count277
-\scratchdimen=\dimen270
-\scratchbox=\box81
+\scratchdimen=\dimen275
+\scratchbox=\box82
 \nofMPsegments=\count278
 \nofMParguments=\count279
-\everyMPshowfont=\toks36
+\everyMPshowfont=\toks37
 \MPscratchCnt=\count280
-\MPscratchDim=\dimen271
+\MPscratchDim=\dimen276
 \MPnumerator=\count281
 \makeMPintoPDFobject=\count282
-\everyMPtoPDFconversion=\toks37
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
@@ -719,32 +731,83 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 51.
+ on input line 61.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 51.
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+(lastpage)             ! on input line 61.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 64.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 64.
 
-]
+Underfull \hbox (badness 10000) in paragraph at lines 70--70
+[]|\OT1/cmr/m/n/9 INSERT
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+[]|\OT1/cmr/m/n/9 CREATE
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
+\OT1/cmr/m/n/9 DA-TA-BA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\OT1/cmr/m/n/9 CREATE
+ []
+
+
+Underfull \hbox (badness 1354) in paragraph at lines 76--76
+[]|\OT1/cmr/m/n/9 DROP TA-
+ []
+
+
+Overfull \hbox (8.81383pt too wide) in paragraph at lines 77--77
+[]|[]| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 78--78
+[]|\OT1/cmr/m/n/9 CREATE
+ []
+
+
+Overfull \hbox (3.0604pt too wide) in paragraph at lines 64--118
+[]
+ []
+
+
+Overfull \hbox (2.05554pt too wide) in paragraph at lines 64--118
+[]$ $[]$ 
+ []
+
 
 AED: lastpage setting LastPage
-[2] (./spickTest1.aux) ) 
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+] (./spickTest1.aux) ) 
 Here is how much of TeX's memory you used:
- 25057 strings out of 481239
- 652103 string characters out of 5920377
- 1068756 words of memory out of 5000000
- 39901 multiletter control sequences out of 15000+600000
- 532943 words of font info for 26 fonts, out of 8000000 for 9000
+ 25520 strings out of 481239
+ 659655 string characters out of 5920377
+ 1085976 words of memory out of 5000000
+ 40352 multiletter control sequences out of 15000+600000
+ 534469 words of font info for 31 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 63i,11n,98p,727b,609s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmr10.pfb>
-Output written on spickTest1.pdf (2 pages, 24742 bytes).
+ 63i,15n,98p,748b,1027s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
+s/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+>
+Output written on spickTest1.pdf (1 page, 55440 bytes).
 PDF statistics:
- 46 PDF objects out of 1000 (max. 8388607)
- 23 compressed objects within 1 object stream
+ 47 PDF objects out of 1000 (max. 8388607)
+ 24 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
