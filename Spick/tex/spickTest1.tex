@@ -32,8 +32,10 @@
 
 \singlespacing % reduce spaceing
 
-\def \license {GNU Free Documentation License (https://www.gnu.org/licenses/fdl-1.3)} % gpl for the win
+\def \license {GNU Free Documentation License} % gpl for the win
+\author{Sven Hugi} % author(s)
 
+%\makeatletter % to use \@
 % header and footer with fancy
 \pagestyle{fancy} % set pagestyle
 \fancyhf{} % just do it -> fancy think it's fancy to do so...
@@ -41,7 +43,7 @@
 \lhead{Test 1, AB 1 - 4} % left header
 \chead{inf-2018i} % center header
 \cfoot{\thepage/\pageref{LastPage}} % center footer -> pagenmbr
-
+\lfoot{License: \license} % left footer
 
 % highlighting with some random effect -> looks handmade and i love it...
 \newcommand\hl[2][yellow]{
@@ -61,7 +63,7 @@
 \begin{document}
 	\begin{small}
 	\section{SQL}
-		\begin{tabular}{m{1.75cm}|p{14.5cm}}
+		\begin{tabular}{m{2cm}|p{14.25cm}}
 			Command 		& Description\\\hline\hline
 			USE				& wechselt den Ausführungskontext auf eine bestimmte Datenbank. \hl{USE master}, in diesem Fall wird zur \hl[green]{Metadaten DB} gewechselt.\\\hline
 			SELECT			& \hl[pink]{SELECT [Collumn name] FROM [Table name]}\\\hline
@@ -75,13 +77,15 @@
 			CREATE TABLE	& um eine Tabele zu kreieren, \hl[pink]{CREATE TABLE [table name] ([Coll1, coll2 etc])}\\\hline
 			DROP TABLE		& schmeisst die Table aus dem Fenster\\\hline
 			ALTER TABLE		& \hl[pink]{ALTER TABLE [Table name] [DROP / ALTER] COLUMN [column name] [datatype (only if ALTER)]}\\\hline
-			CREATE INDEX	& 
+			CONSTRAINT		& bedingung $\rightarrow$ z.B Key \hl[pink]{CONSTRAINT [key name] PRIMARY KEY  [type (optional)] ([referenz])} oder für einen foreign key: \hl[pink]{CONSTRAINT [key name] FOREIGN KEY ([target]) REFERENCES}\hl[pink]{ [tabelle]([spallte])}\\\hline
+			CREATE INDEX	& \hl[pink]{CREATE [type] INDEX [index name] ON [table] ([spallte])} man kann dann mit \hl{INCLUDE} andere Spallten includen.
+			
 			
 		\end{tabular}
 		\begin{minipage}{0.5\linewidth}
 			\section{Data Type}
 			\begin{tabular}{c|c}
-				Data type	& use\\\hline
+				Data type	& use\\\hline\hline
 				bigint		& 64 bit number\\\hline
 				int			& 32 bit number\\\hline
 				smallint	& 16 bit number\\\hline
@@ -113,8 +117,36 @@
 		\end{minipage}
 		\begin{minipage}{0.5\linewidth}
 			\section{Indexes}
+				\begin{itemize}
+					\item NONCLUSTERED
+					\item CLUSTERED
+				\end{itemize}
 			 
 		\end{minipage}
 	\section{Trees}
-	 \end{small}
+	\begin{minipage}{0.65 \linewidth}
+		\section{DM}
+			\begin{tabular}{c|c|c|c}
+				Element					&Voranalyse	&Konzeptionelles DM	&Logisches DM\\\hline\hline
+				Entitäten Namen			&X			&X					&\\\hline
+				Entitäten Beziehungen	&X			&X					&\\\hline
+				Attribute Namen			&			&X					&\\\hline
+				Primärschlüssel			&			&X					&X\\\hline
+				Fremdschlüssel			&			&					&X\\\hline
+				Tabellen Namen			&			&					&X\\\hline
+				Spalten Namen			&			&					&X\\\hline
+				Datentypen				&			&					&X\\\hline
+			\end{tabular}
+	\end{minipage}
+	\begin{minipage}{0.35 \linewidth}
+		\section{Spezialisierung / Generalisierung}
+			\begin{itemize}
+				\item Superklasse und Subklasse je eine Tabelle(bekannt)
+				\item Eine Klasse pro Subklasse(keine Superklasse)
+				\item Alles in einer Tabelle1 zusätzliches Attribut
+				\item Alles in einer Tabelle mit 1 zusätzlichen Attribut pro Subklasse
+			\end{itemize}
+	\end{minipage}
+
+	\end{small}
 \end{document}

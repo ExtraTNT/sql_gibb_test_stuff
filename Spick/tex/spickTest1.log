@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  24 APR 2021 19:10
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 13:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -655,20 +655,20 @@ LaTeX Warning: Unused global option(s):
 (./spickTest1.aux)
 \openout1 = `spickTest1.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 61.
-LaTeX Font Info:    ... okay on input line 61.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 63.
+LaTeX Font Info:    ... okay on input line 63.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -731,83 +731,105 @@ ABD: EveryShipout initializing macros
 Package pgfplots Warning: running in backwards compatibility mode (unsuitable t
 ick labels; missing features). Consider writing \pgfplotsset{compat=1.16} into 
 your preamble.
- on input line 61.
+ on input line 63.
 
 Package lastpage Info: Please have a look at the pageslts package at
 (lastpage)             https://www.ctan.org/pkg/pageslts
-(lastpage)             ! on input line 61.
+(lastpage)             ! on input line 63.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <9> on input line 64.
+(Font)              <9> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 64.
+(Font)              <6> on input line 66.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 64.
+(Font)              <5> on input line 66.
 
-Underfull \hbox (badness 10000) in paragraph at lines 70--70
-[]|\OT1/cmr/m/n/9 INSERT
+Underfull \hbox (badness 6016) in paragraph at lines 72--72
+[]|\OT1/cmr/m/n/9 INSERT IN-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
+Underfull \hbox (badness 10000) in paragraph at lines 74--74
 []|\OT1/cmr/m/n/9 CREATE
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 72--72
-\OT1/cmr/m/n/9 DA-TA-BA-
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 75--75
+[]|\OT1/cmr/m/n/9 DROP DA-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 77--77
 []|\OT1/cmr/m/n/9 CREATE
- []
-
-
-Underfull \hbox (badness 1354) in paragraph at lines 76--76
-[]|\OT1/cmr/m/n/9 DROP TA-
- []
-
-
-Overfull \hbox (8.81383pt too wide) in paragraph at lines 77--77
-[]|[]| 
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 78--78
-[]|\OT1/cmr/m/n/9 CREATE
+[]|\OT1/cmr/m/n/9 DROP TA-
  []
 
 
-Overfull \hbox (3.0604pt too wide) in paragraph at lines 64--118
+Underfull \hbox (badness 6396) in paragraph at lines 79--79
+[]|\OT1/cmr/m/n/9 ALTER TA-
+ []
+
+
+Overfull \hbox (15.92702pt too wide) in paragraph at lines 79--79
+[]|[]| 
+ []
+
+
+Overfull \hbox (6.42456pt too wide) in paragraph at lines 80--80
+[]|\OT1/cmr/m/n/9 CONSTRAINT| 
+ []
+
+
+Overfull \hbox (3.0604pt too wide) in paragraph at lines 66--126
 []
  []
 
 
-Overfull \hbox (2.05554pt too wide) in paragraph at lines 64--118
+Overfull \hbox (2.05554pt too wide) in paragraph at lines 66--126
 []$ $[]$ 
+ []
+
+
+Overfull \hbox (9.33482pt too wide) in paragraph at lines 129--140
+[] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 147--148
+[]\OT1/cmr/m/n/9 Alles in ei-ner Ta-bel-le mit 1
+ []
+
+
+Overfull \hbox (2.05553pt too wide) in paragraph at lines 127--150
+$[]$ $[]$ 
  []
 
 
 AED: lastpage setting LastPage
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
-] (./spickTest1.aux) ) 
+] [2] (./spickTest1.aux) ) 
 Here is how much of TeX's memory you used:
- 25520 strings out of 481239
- 659655 string characters out of 5920377
- 1085976 words of memory out of 5000000
- 40352 multiletter control sequences out of 15000+600000
- 534469 words of font info for 31 fonts, out of 8000000 for 9000
+ 25523 strings out of 481239
+ 659690 string characters out of 5920377
+ 1093976 words of memory out of 5000000
+ 40354 multiletter control sequences out of 15000+600000
+ 534806 words of font info for 32 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,15n,98p,748b,1027s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
->
-Output written on spickTest1.pdf (1 page, 55440 bytes).
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t
+s1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm0900.pfb>
+Output written on spickTest1.pdf (2 pages, 77744 bytes).
 PDF statistics:
- 47 PDF objects out of 1000 (max. 8388607)
- 24 compressed objects within 1 object stream
+ 59 PDF objects out of 1000 (max. 8388607)
+ 33 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  109 words of extra memory for PDF output out of 10000 (max. 10000000)
 
