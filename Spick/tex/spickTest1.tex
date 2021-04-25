@@ -124,6 +124,52 @@
 			 
 		\end{minipage}
 	\section{Trees}
+	\subsection{binary search tree}
+	\begin{tikzpicture}[
+			level 1/.style={
+				level distance=5mm,sibling distance=12mm
+			},
+			level 2/.style={
+				level distance=5mm,sibling distance=8mm
+			},
+			level 3/.style={
+				level distance=5mm,sibling distance=8mm
+			},
+			font=\tiny,inner sep=0.5pt,every node/.style={
+				draw,circle,minimum size=0.5pt
+			}
+		]
+		
+		\node {51} % root
+		child {
+			node {22} % lvl 1
+			child {
+				node{1} % lvl 2
+			} 
+			child {
+				node{42} % lvl 3
+				child {
+					node{37}
+				} 
+				child[missing]
+			}
+			edge from parent
+		}
+		child {
+			node {87} % lvl 1
+			child {
+				node {52} % lvl 2
+				child[missing]
+				child {
+					node{86} % lvl 3
+				}
+			}
+			child {
+				node {94}
+			}
+		};
+	\end{tikzpicture}
+		\linebreak
 	\begin{minipage}{0.65 \linewidth}
 		\section{DM}
 			\begin{tabular}{c|c|c|c}
