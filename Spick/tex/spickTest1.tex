@@ -32,6 +32,8 @@
 
 \singlespacing % reduce spaceing
 
+\graphicspath{ {./images/} }
+
 \def \license {GNU Free Documentation License} % gpl for the win
 \author{Sven Hugi} % author(s)
 
@@ -48,11 +50,11 @@
 % highlighting with some random effect -> looks handmade and i love it...
 \newcommand\hl[2][yellow]{
 	\begin{tikzpicture}[
-	baseline,
-	decoration={random steps,amplitude=0.5pt,segment length=5pt},
-	outer sep=-5pt, inner sep = 0pt
-	]
-	\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
+		baseline,
+		decoration={random steps,amplitude=0.5pt,segment length=5pt},
+		outer sep=-5pt, inner sep = 0pt
+		]
+		\node[decorate,rectangle,fill=#1,anchor=text]{#2\xspace};
 	\end{tikzpicture}
 }
 
@@ -121,7 +123,9 @@
 					\item NONCLUSTERED
 					\item CLUSTERED
 				\end{itemize}
-			 
+			 \includegraphics[width=.9\linewidth]{index}
+			 \includegraphics[width=.9\linewidth]{clusteredIndex}
+			 \includegraphics[width=.9\linewidth]{heap}
 		\end{minipage}
 	\section{Trees}
 	\subsection{binary search tree}
@@ -170,7 +174,31 @@
 		};
 	\end{tikzpicture}
 		\linebreak
-	\begin{minipage}{0.65 \linewidth}
+		
+	\begin{tikzpicture}[
+	level 1/.style={
+		level distance=5mm,sibling distance=8mm
+	},
+	font=\tiny,
+	inner sep=2pt,
+	every node/.style={
+		rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw
+	}
+	]
+
+	\node {2 \nodepart{two} 4}
+	child {
+		node {1}
+	}
+	child {
+		node {3}
+	}
+	child {
+		node {5 \nodepart{two} 6}
+	};
+	\end{tikzpicture}
+		\linebreak
+	\begin{minipage}{0.68 \linewidth}
 		\section{DM}
 			\begin{tabular}{c|c|c|c}
 				Element					&Voranalyse	&Konzeptionelles DM	&Logisches DM\\\hline\hline
@@ -184,7 +212,7 @@
 				Datentypen				&			&					&X\\\hline
 			\end{tabular}
 	\end{minipage}
-	\begin{minipage}{0.35 \linewidth}
+	\begin{minipage}{0.32 \linewidth}
 		\section{Spezialisierung / Generalisierung}
 			\begin{itemize}
 				\item Superklasse und Subklasse je eine Tabelle(bekannt)
@@ -192,7 +220,17 @@
 				\item Alles in einer Tabelle1 zusätzliches Attribut
 				\item Alles in einer Tabelle mit 1 zusätzlichen Attribut pro Subklasse
 			\end{itemize}
+			\subsection{Spezialisierung}
+				Top Down Sicht, ein in mehrere aufteilen.
+			\subsection{Generalisierung}
+				Bottom Up Sicht, mehrere zusammenfassen.
 	\end{minipage}
-
+	\section{4 Fälle}
+		\begin{itemize}
+			\item überlappend (X kann auch Y sein)
+			\item disjunkt (X kann nicht auch Y sein)
+			\item total (jedes X muss auch zu Y gehören)
+			\item partiell (X muss nicht unbedint zu Y gehören)
+		\end{itemize}
 	\end{small}
 \end{document}
