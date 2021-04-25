@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 14:03
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 14:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -819,10 +819,10 @@ Overfull \hbox (2.05553pt too wide) in paragraph at lines 171--196
 AED: lastpage setting LastPage
 [2] (./spickTest1.aux) ) 
 Here is how much of TeX's memory you used:
- 25630 strings out of 481239
- 662431 string characters out of 5920377
- 1096976 words of memory out of 5000000
- 40460 multiletter control sequences out of 15000+600000
+ 25625 strings out of 481239
+ 662169 string characters out of 5920377
+ 1113976 words of memory out of 5000000
+ 40455 multiletter control sequences out of 15000+600000
  535114 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,15n,98p,748b,1287s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -834,7 +834,7 @@ live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/c
 m-super/sfrm0900.pfb>
-Output written on spickTest1.pdf (2 pages, 97138 bytes).
+Output written on spickTest1.pdf (2 pages, 105009 bytes).
 PDF statistics:
  67 PDF objects out of 1000 (max. 8388607)
  39 compressed objects within 1 object stream
