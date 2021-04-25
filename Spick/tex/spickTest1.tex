@@ -127,23 +127,22 @@
 			 \includegraphics[width=.9\linewidth]{clusteredIndex}
 			 \includegraphics[width=.9\linewidth]{heap}
 		\end{minipage}
-	\section{Trees}
-	\subsection{binary search tree}
-	\begin{tikzpicture}[
-			level 1/.style={
-				level distance=5mm,sibling distance=12mm
-			},
-			level 2/.style={
-				level distance=5mm,sibling distance=8mm
-			},
-			level 3/.style={
-				level distance=5mm,sibling distance=8mm
-			},
-			font=\tiny,inner sep=0.5pt,every node/.style={
-				draw,circle,minimum size=10pt
-			}
+	\section{binary search tree and b-tree}
+		\begin{tikzpicture}
+		\begin{scope}[
+		level 1/.style={
+			level distance=5mm,sibling distance=12mm
+		},
+		level 2/.style={
+			level distance=5mm,sibling distance=8mm
+		},
+		level 3/.style={
+			level distance=5mm,sibling distance=8mm
+		},
+		font=\tiny,inner sep=0.5pt,every node/.style={
+			draw,circle,minimum size=10pt
+		}
 		]
-		
 		\node {51} % root
 		child {
 			node {22} % lvl 1
@@ -172,32 +171,87 @@
 				node {94}
 			}
 		};
-	\end{tikzpicture}
-		\linebreak
+		\end{scope}
+		\begin{scope}[xshift=0.25\linewidth,
+		level 1/.style={
+			level distance=5mm,sibling distance=8mm
+		},
+		font=\tiny,
+		inner sep=2pt,
+		every node/.style={
+			rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw
+		}
+		]
+		\node {2 \nodepart{two} 4}
+		child {
+			node {1}
+		}
+		child {
+			node {3}
+		}
+		child {
+			node {5}
+		};
 		
-	\begin{tikzpicture}[
-	level 1/.style={
-		level distance=5mm,sibling distance=8mm
-	},
-	font=\tiny,
-	inner sep=2pt,
-	every node/.style={
-		rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw
-	}
-	]
-
-	\node {2 \nodepart{two} 4}
-	child {
-		node {1}
-	}
-	child {
-		node {3}
-	}
-	child {
-		node {5 \nodepart{two} 6}
-	};
-	\end{tikzpicture}
-		\linebreak
+		\end{scope}
+		\begin{scope}[xshift=0.5\linewidth,
+		level 1/.style={
+			level distance=5mm,sibling distance=8mm
+		},
+		font=\tiny,
+		inner sep=2pt,
+		every node/.style={
+			rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw
+		}
+		]
+		\node {2 \nodepart{two} 4}
+		child {
+			node {1}
+		}
+		child {
+			node {3}
+		}
+		child {
+			node {5 \nodepart{two} 6}
+		};
+			
+		\end{scope}
+		\begin{scope}[xshift=0.75\linewidth,
+		level 1/.style={
+			level distance=5mm,sibling distance=16mm
+		},
+		level 2/.style={
+			level distance=5mm,sibling distance=8mm
+		},
+		font=\tiny,
+		inner sep=2pt,
+		every node/.style={
+			rectangle split, rectangle split horizontal,rectangle split ignore empty parts,draw
+		}
+		]
+		
+		\node {4 \nodepart{two}}
+		child {
+			node {2}
+			child {
+				node{1}
+			}
+			child {
+				node{3}
+			}
+		}
+		child {
+			node{6}
+			child {
+				node{5}
+			}
+			child {
+				node{7}
+			}
+		};
+		\end{scope}
+		\end{tikzpicture}
+.\linebreak
 	\begin{minipage}{0.68 \linewidth}
 		\section{DM}
 			\begin{tabular}{c|c|c|c}
@@ -211,6 +265,13 @@
 				Spalten Namen			&			&					&X\\\hline
 				Datentypen				&			&					&X\\\hline
 			\end{tabular}
+			\section{4 Fälle}
+			\begin{itemize}
+				\item überlappend (X kann auch Y sein)
+				\item disjunkt (X kann nicht auch Y sein)
+				\item total (jedes X muss auch zu Y gehören)
+				\item partiell (X muss nicht unbedint zu Y gehören)
+			\end{itemize}
 	\end{minipage}
 	\begin{minipage}{0.32 \linewidth}
 		\section{Spezialisierung / Generalisierung}
@@ -224,13 +285,18 @@
 				Top Down Sicht, ein in mehrere aufteilen.
 			\subsection{Generalisierung}
 				Bottom Up Sicht, mehrere zusammenfassen.
+		\section{Diagramm}
+			\includegraphics[width=\linewidth]{diagramm}
+			\linebreak
+			\begin{tabular}{c|c}
+				T	& Tabellenname\\\hline
+				A	& Attribute\\\hline
+				D	& Datentypen\\\hline
+				E	& Constraints (NULL, DEAFULT)\\\hline
+				S	& Schlüsselarten (PK, FK)\\\hline
+				I	& Indexe\\
+			\end{tabular}
 	\end{minipage}
-	\section{4 Fälle}
-		\begin{itemize}
-			\item überlappend (X kann auch Y sein)
-			\item disjunkt (X kann nicht auch Y sein)
-			\item total (jedes X muss auch zu Y gehören)
-			\item partiell (X muss nicht unbedint zu Y gehören)
-		\end{itemize}
+
 	\end{small}
 \end{document}
