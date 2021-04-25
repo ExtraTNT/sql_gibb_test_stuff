@@ -79,8 +79,9 @@
 			CREATE TABLE	& um eine Tabele zu kreieren, \hl[pink]{CREATE TABLE [table name] ([Coll1, coll2 etc])}\\\hline
 			DROP TABLE		& schmeisst die Table aus dem Fenster\\\hline
 			ALTER TABLE		& \hl[pink]{ALTER TABLE [Table name] [DROP / ALTER] COLUMN [column name] [datatype (only if ALTER)]}\\\hline
-			CONSTRAINT		& bedingung $\rightarrow$ z.B Key \hl[pink]{CONSTRAINT [key name] PRIMARY KEY  [type (optional)] ([referenz])} oder für einen foreign key: \hl[pink]{CONSTRAINT [key name] FOREIGN KEY ([target]) REFERENCES}\hl[pink]{ [tabelle]([spallte])}\\\hline
-			CREATE INDEX	& \hl[pink]{CREATE [type] INDEX [index name] ON [table] ([spallte])} man kann dann mit \hl{INCLUDE} andere Spallten includen.
+			CONSTRAINT		& bedingung $\rightarrow$ z.B Key \hl[pink]{CONSTRAINT [key name] PRIMARY KEY  [type (optional)] ([referenz])} bzw \hl[pink]{CONSTRAINT [key name] FOREIGN KEY ([target]) REFERENCES}\hl[pink]{ [tabelle]([spallte])}\\\hline
+			CREATE INDEX	& \hl[pink]{CREATE [type] INDEX [index name] ON [table] ([spallte])} man kann dann mit \hl{INCLUDE} andere Spallten includen.\\\hline
+			DROP INDEX		& schmeisst den Index zum Fenster raus
 			
 			
 		\end{tabular}
@@ -253,6 +254,14 @@
 		\end{tikzpicture}
 .\linebreak
 	\begin{minipage}{0.68 \linewidth}
+		\subsection{b-tree ersparrniss}
+		$
+		maximale Schritte\ =\ \frac{
+			\log_{10} (n)
+		}{
+			\log_{10} (Anzahl Verzweigungen)
+		}\ vs\ Heap\ n \rightarrow \emptyset\ \frac{n}{2}
+		$
 		\section{DM}
 			\begin{tabular}{c|c|c|c}
 				Element					&Voranalyse	&Konzeptionelles DM	&Logisches DM\\\hline\hline
@@ -272,6 +281,12 @@
 				\item total (jedes X muss auch zu Y gehören)
 				\item partiell (X muss nicht unbedint zu Y gehören)
 			\end{itemize}
+	\section{Beziehungen}
+		\subsection{Hierarchisch}
+			\includegraphics[width=.5\linewidth]{hierarchie}
+			\includegraphics[width=.5\linewidth]{hierarchie2}
+		\subsection{Netzwerkartig}
+			\includegraphics[width=.5\linewidth]{network}
 	\end{minipage}
 	\begin{minipage}{0.32 \linewidth}
 		\section{Spezialisierung / Generalisierung}
@@ -288,6 +303,11 @@
 		\section{Diagramm}
 			\includegraphics[width=\linewidth]{diagramm}
 			\linebreak
+			- UML\\
+			- Nur Attribut namen in Tabelle\\
+			- Alle Details in Tabelle
+			
+			\subsection{TADESI}
 			\begin{tabular}{c|c}
 				T	& Tabellenname\\\hline
 				A	& Attribute\\\hline

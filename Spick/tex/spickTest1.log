@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 17:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2021.4.17)  25 APR 2021 18:08
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -773,7 +773,7 @@ Underfull \hbox (badness 6396) in paragraph at lines 81--81
  []
 
 
-Overfull \hbox (15.92702pt too wide) in paragraph at lines 81--81
+Overfull \hbox (16.81104pt too wide) in paragraph at lines 81--81
 []|[]| 
  []
 
@@ -782,68 +782,93 @@ Overfull \hbox (6.42456pt too wide) in paragraph at lines 82--82
 []|\OT1/cmr/m/n/9 CONSTRAINT| 
  []
 
+
+Underfull \hbox (badness 10000) in paragraph at lines 84--84
+[]|\OT1/cmr/m/n/9 DROP IN-
+ []
+
 <./images/index.png, id=29, 427.5975pt x 202.7575pt>
 File: ./images/index.png Graphic file (type png)
 <use ./images/index.png>
-Package pdftex.def Info: ./images/index.png  used on input line 126.
+Package pdftex.def Info: ./images/index.png  used on input line 127.
 (pdftex.def)             Requested size: 217.66211pt x 103.21004pt.
 <./images/clusteredIndex.png, id=31, 438.63875pt x 184.69pt>
 File: ./images/clusteredIndex.png Graphic file (type png)
 <use ./images/clusteredIndex.png>
-Package pdftex.def Info: ./images/clusteredIndex.png  used on input line 127.
+Package pdftex.def Info: ./images/clusteredIndex.png  used on input line 128.
 (pdftex.def)             Requested size: 217.66211pt x 91.64868pt.
 <./images/heap.png, id=32, 293.095pt x 188.705pt>
 File: ./images/heap.png Graphic file (type png)
 <use ./images/heap.png>
-Package pdftex.def Info: ./images/heap.png  used on input line 128.
+Package pdftex.def Info: ./images/heap.png  used on input line 129.
 (pdftex.def)             Requested size: 217.66211pt x 140.13763pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 []
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 126--129
+Underfull \hbox (badness 10000) in paragraph at lines 127--130
 []
  []
 
 
-Overfull \hbox (3.0604pt too wide) in paragraph at lines 68--130
+Overfull \hbox (3.0604pt too wide) in paragraph at lines 68--131
 []
  []
 
 
-Overfull \hbox (2.05554pt too wide) in paragraph at lines 68--130
+Overfull \hbox (2.05554pt too wide) in paragraph at lines 68--131
 []$ $[]$ 
  []
 
+<./images/hierarchie.png, id=33, 307.90031pt x 208.52907pt>
+File: ./images/hierarchie.png Graphic file (type png)
+<use ./images/hierarchie.png>
+Package pdftex.def Info: ./images/hierarchie.png  used on input line 286.
+(pdftex.def)             Requested size: 164.45515pt x 111.38216pt.
+<./images/hierarchie2.png, id=34, 190.46156pt x 146.79843pt>
+File: ./images/hierarchie2.png Graphic file (type png)
+<use ./images/hierarchie2.png>
+Package pdftex.def Info: ./images/hierarchie2.png  used on input line 287.
+(pdftex.def)             Requested size: 164.45515pt x 126.75713pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 281--282
+Overfull \hbox (2.05553pt too wide) in paragraph at lines 286--288
+[] [] 
+ []
+
+<./images/network.png, id=35, 310.15875pt x 243.15843pt>
+File: ./images/network.png Graphic file (type png)
+<use ./images/network.png>
+Package pdftex.def Info: ./images/network.png  used on input line 289.
+(pdftex.def)             Requested size: 164.45515pt x 128.929pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--297
 []\OT1/cmr/m/n/9 Alles in ei-ner Ta-bel-le1
  []
 
 
-Underfull \hbox (badness 1609) in paragraph at lines 282--283
+Underfull \hbox (badness 1609) in paragraph at lines 297--298
 []\OT1/cmr/m/n/9 Alles in ei-ner Ta-bel-le mit 1
  []
 
-<./images/diagramm.png, id=33, 316.18124pt x 356.33125pt>
+<./images/diagramm.png, id=36, 316.18124pt x 356.33125pt>
 File: ./images/diagramm.png Graphic file (type png)
 <use ./images/diagramm.png>
-Package pdftex.def Info: ./images/diagramm.png  used on input line 289.
+Package pdftex.def Info: ./images/diagramm.png  used on input line 304.
 (pdftex.def)             Requested size: 154.78653pt x 174.44615pt.
 
-Overfull \hbox (9.63185pt too wide) in paragraph at lines 289--299
+Overfull \hbox (9.63185pt too wide) in paragraph at lines 311--319
 [] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 253--300
+Underfull \hbox (badness 10000) in paragraph at lines 254--320
 [] \OT1/cmr/m/n/9 .
  []
 
 
-Overfull \hbox (2.05553pt too wide) in paragraph at lines 253--300
+Overfull \hbox (2.05553pt too wide) in paragraph at lines 254--320
 []$ $[]$ 
  []
 
@@ -852,27 +877,31 @@ Overfull \hbox (2.05553pt too wide) in paragraph at lines 253--300
  <./images/index.png> <./images/clusteredIndex.png> <./images/heap.png>]
 
 AED: lastpage setting LastPage
-[2 <./images/diagramm.png>] (./spickTest1.aux) ) 
+[2 <./images/hierarchie.png> <./images/hierarchie2.png> <./images/network.png> 
+<./images/diagramm.png>] (./spickTest1.aux) ) 
 Here is how much of TeX's memory you used:
- 25800 strings out of 481239
- 665955 string characters out of 5920377
- 1123976 words of memory out of 5000000
- 40628 multiletter control sequences out of 15000+600000
+ 25821 strings out of 481239
+ 666400 string characters out of 5920377
+ 1125976 words of memory out of 5000000
+ 40649 multiletter control sequences out of 15000+600000
  535114 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  63i,15n,98p,748b,1336s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvi
-ps/cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/
-amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
-ts/cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/c
-mr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/s
-hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/te
-xmf/fonts/type1/public/cm-super/sfrm0900.pfb>
-Output written on spickTest1.pdf (2 pages, 180680 bytes).
+{/usr/share/texmf/fonts/enc/dvips/
+cm-super/cm-super-ts1.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
+cm/cmbx9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi
+6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texmf/fonts/type1/public/cm
+-super/sfrm0900.pfb>
+Output written on spickTest1.pdf (2 pages, 242426 bytes).
 PDF statistics:
- 76 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 91 PDF objects out of 1000 (max. 8388607)
+ 49 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 129 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 144 words of extra memory for PDF output out of 10000 (max. 10000000)
 
