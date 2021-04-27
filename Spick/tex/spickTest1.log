@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.10.22)  27 APR 2021 08:08
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2019/dev/Debian) (preloaded format=pdflatex 2020.10.22)  27 APR 2021 08:11
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -799,7 +799,7 @@ Underfull \hbox (badness 6396) in paragraph at lines 80--80
  []
 
 
-Overfull \hbox (16.29855pt too wide) in paragraph at lines 80--80
+Overfull \hbox (16.05333pt too wide) in paragraph at lines 80--80
 []|[]| 
  []
 
@@ -939,7 +939,7 @@ onts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr
 /share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb>
-Output written on spickTest1.pdf (2 pages, 236676 bytes).
+Output written on spickTest1.pdf (2 pages, 236734 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream
